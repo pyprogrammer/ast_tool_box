@@ -21,11 +21,9 @@ class CodePane(QtGui.QGroupBox):
         layout = QtGui.QVBoxLayout()
 
         button_box = QtGui.QGroupBox()
-        #button_box.setMaximumHeight(40)
-        button_box.setMaximumHeight(100)
-        button_box.setMinimumHeight(40)
+        button_box.setMaximumHeight(40)
         toolbar_layout = QtGui.QHBoxLayout()
-       # toolbar_layout.setContentsMargins(0, 0, 0, 0)
+        # toolbar_layout.setContentsMargins(0, 0, 0, 0)
         toolbar_layout.addSpacing(0)
 
         one_button = QtGui.QPushButton(u"\u20DE")

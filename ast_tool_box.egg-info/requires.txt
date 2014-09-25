@@ -1,0 +1,5 @@
+PySide
+nose
+codegen
+ctree
+sphinx

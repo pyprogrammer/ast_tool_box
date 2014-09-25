@@ -20,7 +20,7 @@ setup(
     ],
 
     install_requires=[
-        'PySide (>=1.1.2)',
+        'PySide',
         'nose',
         'codegen',
         'ctree',

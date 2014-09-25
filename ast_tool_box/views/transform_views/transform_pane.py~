@@ -30,7 +30,7 @@ class TransformPane(QtGui.QGroupBox):
         layout = QtGui.QVBoxLayout()
 
         button_box = QtGui.QGroupBox()
-        #button_box.setMaximumHeight(40)
+        button_box.setMaximumHeight(40)
         button_layout = QtGui.QHBoxLayout()
         go_button = QtGui.QPushButton("Apply")
         go_button.clicked.connect(self.transform_presenter.apply_current_transform)

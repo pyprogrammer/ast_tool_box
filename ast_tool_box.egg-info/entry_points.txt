@@ -1,0 +1,3 @@
+[console_scripts]
+ast_tool_box = ast_tool_box.main:main
+

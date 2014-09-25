@@ -47,8 +47,16 @@ def get_qapplication_instance():
         # sys.argv[0] = PROGRAM_NAME
         print("here I am")
         app = QtGui.QApplication(sys.argv[1:])
-        app.setStyle(QtGui.QMacStyle)
-        QtGui.QApplication.setStyle(QtGui.QMacStyle())
+        if 'linux' in sys.platform:
+            style = QtGui.QCleanlooksStyle
+        if 'win32' in sys.platform:
+            style = QtGui.QWindowsStyle
+        if 'darwin' in sys.platform:
+            style = QtGui.QMacStyle
+        else:
+            style = QtGui.CommonStyle
+        app.setStyle(style)
+        QtGui.QApplication.setStyle(style())
     check_class(app, QtGui.QApplication)
     return app
 
